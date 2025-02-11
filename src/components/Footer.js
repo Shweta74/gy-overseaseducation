@@ -1,62 +1,68 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import {  FaEnvelope, FaPhoneAlt, FaSearchLocation, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa'; 
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { FaEnvelope, FaPhoneAlt, FaSearchLocation, FaFacebook, FaInstagram, FaLinkedin } from 'react-icons/fa';
+
 const Footer = () => {
   return (
-    <div className='bg-blue-950  text-slate-300 p-20'>
-      <div className=' text-xl flex flex-wrap justify-around border-b border-slate-50'>
-        <div className=" p-5 ">
-          <h4 className='text-xl font-bold pb-2 '>Quick Links</h4>
-            <ul  className=' '>
-              <li className='pt-2'>
-                <Link to="/" className='text-slate-300 hover:text-white'>Home</Link>
-              </li>
-              <li className='pt-2'>
-                <Link to="/about" className='text-slate-300 hover:text-white'>About</Link>
-              </li>
-              <li className='pt-2'>
-                <Link to="/services" className='text-slate-300 hover:text-white'>Services</Link>
-              </li>
-              <li className='pt-2'>
-                <Link to="/countries" className='text-slate-300 hover:text-white'>Countries</Link>
-              </li>
-              <li className='pt-2'>
-                <Link to="/contact" className='text-slate-300 hover:text-white'>Contact</Link>
-              </li>
-            </ul>
+    <div className="bg-blue-950 text-slate-300 px-6 py-12 md:px-16 lg:px-20 text-lg">
+      
+      {/* Footer Grid (Mobile: Column, Desktop: 3 Columns) */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 border-b border-slate-50 pb-8 text-xl   
+">
+        {/* Quick Links */}
+        <div>
+          <h4 className="text-2xl font-bold pb-4">Quick Links</h4>
+          <ul className="space-y-2">
+            <li><Link to="/" className="hover:text-white">Home</Link></li>
+            <li><Link to="/about" className="hover:text-white">About</Link></li>
+            <li><Link to="/services" className="hover:text-white">Services</Link></li>
+            <li><Link to="/countries" className="hover:text-white">Countries</Link></li>
+            <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
+          </ul>
         </div>
-   
-        <div className='mb-10 items-center' >
-            {/* <h4 className='text-xl font-bold pb-2  '>Bengaluru</h4> */}
-          <div className=' mt-4'>
-            <span className='flex  mb-2'><FaSearchLocation className='text-xl  m-2 mt-1 text-slate-300 hover:text-white'/>: #103, 4th Main, Hill View Garden,<br/>&nbsp;
-                    Thurahalli, Bengaluru, Karnataka 560061
-              </span>
-              <span className='flex mb-2 '><FaPhoneAlt className='text-xl m-2 mt-1 text-slate-300 hover:text-white'/>: +91 9915808816</span>
-              <span className='flex '> <FaEnvelope className='text-xl  m-2 mt-1 text-slate-300 hover:text-white'/>: info@gyoverseaseducation.com</span>
-             
-          </div>
-        
-        </div>
-        <div className=" p-5 ">
-              <h4 className='text-xl font-bold pb-4  '>Follow us</h4>
-             <div className='flex '>
-                <span className='pr-2'>
-                  <Link to="/"><FaFacebook className='text-4xl text-slate-300 hover:text-white'/></Link>
-                </span>
-                <span className='pr-2'>
-                <Link to="/about"><FaInstagram className='text-4xl text-slate-300 hover:text-white'/></Link>
-                </span>
-                <span className='pr-2'>
-                <Link to="/services"><FaLinkedin className='text-4xl text-slate-300 hover:text-white'/></Link>
-                </span>
-             </div>
 
+        {/* Contact Information */}
+        <div>
+          <h4 className="text-2xl font-bold pb-4">Contact</h4>
+          <div className="space-y-3">
+            <p className="flex items-start">
+              <FaSearchLocation className="text-lg mr-2 text-slate-300 hover:text-white" />
+              #103, 4th Main, Hill View Garden, Thurahalli, Bengaluru, Karnataka 560061
+            </p>
+            <p className="flex items-center">
+              <FaPhoneAlt className="text-lg mr-2 text-slate-300 hover:text-white" />
+              +91 9915808816
+            </p>
+            <p className="flex items-center">
+              <FaEnvelope className="text-lg mr-2 text-slate-300 hover:text-white" />
+              info@gyoverseaseducation.com
+            </p>
+          </div>
+        </div>
+
+        {/* Follow Us */}
+        <div>
+          <h4 className="text-2xl font-bold pb-4">Follow us</h4>
+          <div className="flex space-x-6">
+            <a href="https://www.facebook.com/your-profile-name" target="_blank" rel="noopener noreferrer">
+              <FaFacebook className="text-3xl text-slate-300 hover:text-white transition-transform transform hover:scale-110" />
+            </a>
+            <a href="https://www.instagram.com/your-profile-name" target="_blank" rel="noopener noreferrer">
+              <FaInstagram className="text-3xl text-slate-300 hover:text-white transition-transform transform hover:scale-110" />
+            </a>
+            <a href="https://www.linkedin.com/your-profile-name" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="text-3xl text-slate-300 hover:text-white transition-transform transform hover:scale-110" />
+            </a>
+          </div>
         </div>
       </div>
-        <p className='text-base text-center m-5'><span > ©Copyright <Link to="http://www.paulmerchants.net/">GY Overseas Education</Link>. All Right Reserved</span></p>
-    </div>
-  )
-}
 
-export default Footer
+      {/* Copyright */}
+      <p className="text-center text-sm mt-6">
+        © Copyright <Link to="https://www.instagram.com/gitteshyadav?igsh=Mmg1d3E4MGh0b2hy" className="hover:text-white">GYOverseas Education</Link>. All Rights Reserved
+      </p>
+    </div>
+  );
+};
+
+export default Footer;

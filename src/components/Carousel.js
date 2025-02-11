@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { FaChevronCircleLeft, FaChevronCircleRight } from 'react-icons/fa'; 
+import React, { useState, useEffect } from "react";
+import { FaChevronCircleLeft, FaChevronCircleRight } from "react-icons/fa";
 
 const Carousel = ({ slides }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -34,20 +34,28 @@ const Carousel = ({ slides }) => {
   }, [autoSlideActive, slides.length]);
 
   return (
-    <div className="relative">
+    <div className="relative w-full h-96 sm:h-96 md:h-96 lg:h-[1200px]">
+      {/* Hide buttons on small screens (sm) */}
       <FaChevronCircleLeft
-        className="absolute top-1/2 left-2 text-6xl transform -translate-y-1/2 text-white rounded-md z-10 cursor-pointer"
+        className="hidden sm:block absolute top-1/2 left-2 transform -translate-y-1/2 text-3xl sm:text-4xl md:text-5xl text-white z-10 cursor-pointer"
         onClick={prevSlide}
       />
       <FaChevronCircleRight
-        className="absolute top-1/2 right-2 text-6xl transform -translate-y-1/2 text-white text-blue rounded-md z-10 cursor-pointer"
+        className="hidden sm:block absolute top-1/2 right-2 transform -translate-y-1/2 text-3xl sm:text-4xl md:text-5xl text-white z-10 cursor-pointer"
         onClick={nextSlide}
       />
-      <div className="overflow-hidden relative h-full">
-        <div className="flex transition ease-in-out h-2/4 duration-1000" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+      <div className="overflow-hidden h-full">
+        <div
+          className="flex transition-transform duration-1000"
+          style={{ transform: `translateX(-${currentSlide * 100}%)` }}
+        >
           {slides.map((slide, index) => (
-            <div key={index} className="w-full h-screen flex-shrink-0 bg-cover bg-center" style={{ backgroundImage: `url(${slide})` }}>
-              {/* You can add any additional content or styling here */}
+            <div key={index} className="w-full flex-shrink-0">
+              <img
+                src={slide}
+                alt={`Slide ${index + 1}`}
+                className="w-full h-full object-cover"
+              />
             </div>
           ))}
         </div>

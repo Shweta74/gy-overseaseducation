@@ -7,14 +7,17 @@ import Contact from "./src/components/Contact";
 import Footer from "./src/components/Footer";
 import Services from "./src/components/Services";
 import Countries from "./src/components/Countries";
-import Counseling from './src/components/Counseling';
-import ServicesOption from './src/components/ServicesOption';
-import Australia from './src/components/Australia';
-// import Breadcrumb from './src/components/BreadCrumb';
+// import ServicesOption from './src/components/ServicesOption';
 import { RouterProvider, createBrowserRouter, Outlet, useLocation } from 'react-router-dom';
 import Error from "./src/components/Error";
-import Counseling from './src/components/Counseling';
-
+import PrepExams from './src/components/PrepExam';
+import IELTS from './src/components/IELTS';
+import TOEFL from './src/components/TOEFL';
+import SAT from './src/components/SAT';
+import GRE from './src/components/GRE';
+import GMAT from './src/components/GMAT';
+import PTE from './src/components/PTE';
+import RussiaMbbs from './src/components/RussiaMbbs';
 const App = () => {
   const location = useLocation();
   // const pathnames = location.pathname.split('/').filter((x) => x);
@@ -24,6 +27,7 @@ const App = () => {
         {/* <Breadcrumb pathnames={pathnames} /> */}
         <Outlet/>
         <Footer/>
+        
     </div>
   )
 }
@@ -50,20 +54,40 @@ const appRouter=createBrowserRouter([
         element:<Countries/>
       },
       {
-        path:"/counseling",
-        element:<Counseling/>
+        path: "/prepexams",
+        element: <PrepExams />,
+      },
+      {
+        path: "/ielts",
+        element: <IELTS />,
+      },
+      {
+        path: "/toefl",
+        element: <TOEFL />,
+      },
+      {
+        path: "/sat",
+        element: <SAT/>,
+      },
+      {
+        path: "/gre",
+        element: <GRE />,
+      },
+      {
+        path: "/gmat",
+        element: <GMAT />,
+      },
+      {
+        path: "/pte",
+        element: <PTE/>,
+      },
+      {
+        path:"/russiambbs",
+        element:<RussiaMbbs/>,
       },
       {
         path:"/contact",
         element:<Contact/>
-      },
-      {
-        path:"/australia",
-        element:<Australia/>
-      },
-      {
-        path:"/services/:serId",
-        element:<ServicesOption/>
       }
     ],
     errorElement:<Error/>
