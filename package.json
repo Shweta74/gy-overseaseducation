@@ -2,7 +2,7 @@
   "name": "gy-overseaseducation",
   "version": "1.0.0",
   "description": "This is an immigration application by Shweta",
-  "main": "App.js",
+
   "scripts": {
     "start": "parcel index.html",
     "build": "parcel build index.html",

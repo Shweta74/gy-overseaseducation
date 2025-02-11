@@ -62,7 +62,7 @@
 // export default Contact
 import React from "react";
 import contact from "../assests/contact-bg.jpg";
-
+import location from "../assests/location.png";
 const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-2xl">
@@ -87,7 +87,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {/* Location Map */}
           <div>
-            <iframe
+            {/* <iframe
               title="Location Map"
               src="https://maps.app.goo.gl/6j1JvYKcYpvrRrks6"
               width="100%"
@@ -95,7 +95,7 @@ const Contact = () => {
               className="border rounded-lg shadow-md md:h-96"
               allowFullScreen=""
               loading="lazy"
-            ></iframe>
+            ></iframe> */}<img src={location} alt="location"/>
           </div>
 
           {/* Contact Information */}
