@@ -45,7 +45,7 @@ body{
 }
 .menu-horizontal > li {
   position: relative;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .menu-horizontal > li> a:hover, .menu-horizontal > li> button:hover, .menu-horizontal > li> ul> li > a:hover  {

@@ -38,12 +38,12 @@ const servicesItems = [
         <div className="mt-4 flex flex-wrap">
           <img 
             src={UKuniversity} 
-            alt="Image 1 Description" 
+            alt="UKuniversity" 
             className="w-screen"
           />
           <img 
             src={UKRank} 
-            alt="Image 2 Description" 
+            alt="UKuniversityRank" 
             className="w-screen"
           />
         </div>
@@ -56,12 +56,12 @@ const servicesItems = [
       <div className="mt-4 flex flex-wrap">
         <img 
           src={Irelanduniversity} 
-          alt="Image 1 Description" 
+          alt="Irelanduniversity" 
           className="w-screen"
         />
         <img 
           src={IrelandRank} 
-          alt="Image 2 Description" 
+          alt="IrelanduniversityRank" 
           className="w-screen"
         />
       </div>
@@ -72,12 +72,12 @@ const servicesItems = [
       <div className="mt-4 flex flex-wrap">
         <img 
           src={USAuniversity}
-          alt="Image 1 Description" 
+          alt="USAuniversity" 
           className="w-screen"
         />
         <img 
           src={USARank} 
-          alt="Image 2 Description" 
+          alt="USAuniversityRank" 
           className="w-screen"
         />
       </div>
@@ -88,12 +88,12 @@ const servicesItems = [
       <div className="mt-4 flex flex-wrap">
         <img 
           src={canadauniversity}  
-          alt="Image 1 Description" 
+          alt="Canadauniversity" 
           className="w-screen"
         />
         <img 
           src={canadaRank} 
-          alt="Image 2 Description" 
+          alt="CanadauniversityRank" 
           className="w-screen"
         />
       </div>
@@ -104,12 +104,12 @@ const servicesItems = [
       <div className="mt-4 flex flex-wrap">
         <img 
           src={Australiauniversity}
-          alt="Image 1 Description" 
+          alt="Australiauniversity" 
           className="w-screen"
         />
         <img 
           src={AustraliaRank}
-          alt="Image 2 Description" 
+          alt="AustraliauniversityRank" 
           className="w-screen"
         />
       </div>
@@ -119,13 +119,13 @@ const servicesItems = [
           <NewZealand/>
           <div className="mt-4 flex flex-wrap">
             <img 
-              src={NZuniversity}
-              alt="Image 1 Description" 
+              src={NZuniversity}land
+              alt="Newzelanduniversity" 
               className="w-screen"
             />
             <img 
               src={NzRank} 
-              alt="Image 2 Description" 
+              alt="NewzelanduniversityRank" 
               className="w-screen"
             />
           </div>
@@ -137,12 +137,12 @@ const servicesItems = [
         <div className="mt-4 flex flex-wrap">
           <img 
             src={singaporeuniversity}
-            alt="Image 1 Description" 
+            alt="Singaporeuniversity" 
             className="w-screen"
           />
           <img 
             src={SingaporeRank}
-            alt="Image 2 Description" 
+            alt="SingaporeuniversityRank" 
             className="w-screen"
           />
         </div>
@@ -153,12 +153,12 @@ const servicesItems = [
           <div className="mt-4 flex flex-wrap">
             <img 
               src={UAEuniversity}
-              alt="Image 1 Description" 
+              alt="Dubaiuniversity" 
               className="w-screen"
             />
             <img 
               src={UAERank} 
-              alt="Image 2 Description" 
+              alt="DubaiuniversityRank" 
               className="w-screen"
             />
           </div>
@@ -169,12 +169,12 @@ const servicesItems = [
             <div className="mt-4 flex flex-wrap">
               <img 
                 src={Germanyuniversity}
-                alt="Image 1 Description" 
+                alt="Germanyuniversity" 
                 className="w-screen"
               />
               <img 
                 src={GermanyRank} 
-                alt="Image 2 Description" 
+                alt="GermanyuniversityRank" 
                 className="w-screen"
               />
             </div>
