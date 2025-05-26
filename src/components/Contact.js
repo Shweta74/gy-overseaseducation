@@ -2,6 +2,9 @@
 import React from "react";
 import contact from "../assests/contact-bg.jpg";
 import location from "../assests/location.png";
+// In Contact.js (which lives in src/components/)
+import contactImg from "../assests/images/form.jpg";
+
 const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50 text-2xl">
@@ -21,6 +24,49 @@ const Contact = () => {
             Contact us today to learn more about our study abroad programs. We'll help you choose the right program for your needs and budget.
           </p>
         </div>
+
+{/* Contact Form */}
+          <h2 className="text-2xl font-bold text-blue-900 text-center mb-6">
+            Get in Touch
+          </h2>
+      <div className="mt-14 mb-12 max-w-screen-xl mx-auto px-4">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+    
+    {/* Contact Form */}
+    <form className="bg-white shadow-md rounded-lg p-8 md:p-12 w-full">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <input  
+          type="text"
+          placeholder="Full Name"
+          className="border p-4 rounded-lg w-full text-lg focus:ring-2 focus:ring-blue-400"
+        />
+        <input
+          type="email"
+          placeholder="Email Address"
+          className="border p-4 rounded-lg w-full text-lg focus:ring-2 focus:ring-blue-400"
+        />
+      </div>
+      <textarea
+        placeholder="Your Message"
+        className="border p-4 rounded-lg w-full mt-5 h-36 text-lg focus:ring-2 focus:ring-blue-400"
+      ></textarea>
+      <button className="bg-blue-600 text-white font-semibold px-8 py-4 mt-5 rounded-lg w-full md:w-auto text-lg">
+        Send Message
+      </button>
+    </form>
+
+    {/* Image on Right Side */}
+    <div className="w-full">
+      <img
+        src={contactImg}
+        alt="Contact"
+        // className="rounded-lg shadow-lg w-full h-auto object-cover"
+      />
+    </div>
+  </div>
+</div>
+
+ 
 
         {/* Responsive Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -65,33 +111,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* Contact Form */}
-        {/* <div className="mt-14 max-w-screen-md mx-auto">
-          <h2 className="text-2xl font-bold text-blue-900 text-center mb-6">
-            Get in Touch
-          </h2>
-          <form className="bg-white shadow-md rounded-lg p-8 md:p-12">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <input
-                type="text"
-                placeholder="Full Name"
-                className="border p-4 rounded-lg w-full text-lg focus:ring-2 focus:ring-blue-400"
-              />
-              <input
-                type="email"
-                placeholder="Email Address"
-                className="border p-4 rounded-lg w-full text-lg focus:ring-2 focus:ring-blue-400"
-              />
-            </div>
-            <textarea
-              placeholder="Your Message"
-              className="border p-4 rounded-lg w-full mt-5 h-36 text-lg focus:ring-2 focus:ring-blue-400"
-            ></textarea>
-            <button className="bg-blue-600 text-white font-semibold px-8 py-4 mt-5 rounded-lg w-full md:w-auto text-lg">
-              Send Message
-            </button>
-          </form>
-        </div> */}
+        
       </div>
     </div>
   );
