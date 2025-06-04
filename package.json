@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "This is an immigration application by Shweta",
   "scripts": {
-  "start": "parcel index.html",
-  "build": "parcel build index.html",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-},
+    "start": "parcel index.html",
+    "build": "parcel build index.html && copy dist\\index.html dist\\404.html && type nul > dist\\.nojekyll",
+    "deploy": "npm run build && gh-pages -d dist"
+
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Shweta74/gy-overseaseducation.git"
@@ -20,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/Shweta74/gy-overseaseducation/issues"
   },
-  "homepage": "https://github.com/Shweta74/gy-overseaseducation#readme",
+  "homepage": "https://gyoverseas.com",
   "devDependencies": {
     "daisyui": "^4.12.14",
     "gh-pages": "^6.3.0",
