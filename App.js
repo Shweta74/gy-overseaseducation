@@ -17,6 +17,7 @@ import SAT from './src/components/SAT';
 import GRE from './src/components/GRE';
 import GMAT from './src/components/GMAT';
 import PTE from './src/components/PTE';
+import ContactUs from './src/components/contactUs';
 import RussiaMbbs from './src/components/RussiaMbbs';
 const App = () => {
   const location = useLocation();
@@ -88,6 +89,10 @@ const appRouter=createBrowserRouter([
       {
         path:"/contact",
         element:<Contact/>
+      },
+      {
+        path: "/contact-us",
+        element: <ContactUs />
       }
     ],
     errorElement:<Error/>
