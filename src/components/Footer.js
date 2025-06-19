@@ -31,7 +31,7 @@ const Footer = () => {
             </p>
             <p className="flex items-center">
               <FaPhoneAlt className="text-xl mr-2 text-slate-300 hover:text-white" />
-              +91 9915808816
+              +91 6366307235
             </p>
             <p className="flex items-center">
               <FaEnvelope className="text-lg mr-2 text-slate-300 hover:text-white" />

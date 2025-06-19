@@ -134,14 +134,16 @@ const Contact = () => {
             <div>
               <p className="text-gray-800 text-lg leading-relaxed">
                 <strong>Phone:</strong><br />
-                +91 9915808816<br />
-                +91 6366307235
+            +91 6366307235          <br />
+              +91 9915808816
+                
               </p>
             </div>
             <div>
               <p className="text-gray-800 text-lg leading-relaxed">
                 <strong>Email:</strong><br />
-                info@gyoverseas.com
+                info@gyoverseas.com<br />
+                gyoverseas24@gmail.com
               </p>
             </div>
           </div>
