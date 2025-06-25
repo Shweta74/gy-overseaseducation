@@ -4,6 +4,7 @@
   "description": "This is an immigration application by Shweta",
   "scripts": {
      "start": "parcel index.html",
+     "start-server": "node server.js",
   "predeploy": "npm run build",
   "deploy": "gh-pages -d dist",
   "build": "parcel build index.html && copy dist\\index.html dist\\404.html && type nul > dist\\.nojekyll"
